@@ -21,7 +21,7 @@ a {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  color: #262e36;
+  color: #272e35;
   line-height: 1;
   background-color: white;
 }
@@ -52,6 +52,67 @@ body {
 .button--primary {
   color: white;
   background-color: #579aff;
+}
+
+.button--outline {
+  border: solid 1px;
+  color: #a5b2c3;
+}
+
+.block {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.block-caption {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.block-caption:before {
+  left: 0;
+  -webkit-transform: translateX(-100%) translateY(-50%);
+          transform: translateX(-100%) translateY(-50%);
+}
+
+.block-caption:after {
+  right: 0;
+  -webkit-transform: translateX(100%) translateY(-50%);
+          transform: translateX(100%) translateY(-50%);
+}
+
+.block-caption:before, .block-caption:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  background-color: #579aff;
+  top: 50%;
+}
+
+.block-heading {
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 1.4;
+}
+
+.block-heading span {
+  display: block;
 }
 
 .header {
@@ -95,5 +156,52 @@ body {
 
 .header-menu-link:hover {
   color: #579aff;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+}
+
+.banner-info {
+  width: 35%;
+}
+
+.banner-image {
+  width: 65%;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.banner-heading {
+  font-size: 55px;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+
+.banner-heading span {
+  display: block;
+}
+
+.banner-desc {
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.banner-links .button:first-child {
+  margin-right: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.work {
+  padding-top: 145px;
+  padding-bottom: 50px;
 }
 /*# sourceMappingURL=style.css.map */
